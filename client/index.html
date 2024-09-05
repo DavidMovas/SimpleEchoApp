@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="header">Echo App</h1>
+    <div class="users__actions">
+        <button class="btn-load btn-load__users">Load Users</button>
+        <div class="user__action__from">
+            <form class="form">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" name="email" id="email">
+                <div class="form__buttons">
+                    <button class="btn-load btn-load__user">Load</button>
+                    <button class="btn-load btn-delete__user">Delete</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div id="root">
+        <div class="users__table">
+            <table id="users__table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+        </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

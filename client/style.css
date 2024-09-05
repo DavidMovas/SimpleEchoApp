@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.header {
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 24px;
+    justify-content: center;
+    font-weight: 1200;
+    font-size: 48px;
+    color: darkorange;
+}
+
+.users__actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.user__action__from {
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 25px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form__label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form__input {
+    width: 320px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px
+}
+
+.form__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-load {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 160px;
+    background-color:#f2c600;
+    border-radius: 30px;
+    cursor: pointer;
+    color:#ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #2f6627;
+}
+.btn-load:hover {
+    background-color:#5cbf2a;
+}
+.btn-load:active {
+    position:relative;
+    top:1px;
+}
+
+.btn-load__user {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.btn-delete__user {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.users__table{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+#users__table{
+    border-collapse: collapse;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#users__table thead tr {
+    background-color: #01b035;
+    color: #ffffff;
+    text-align: left;
+}
+
+#users__table th,
+#users__table td {
+    padding: 12px 15px;
+}
+
+#users__table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#users__table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
